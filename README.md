@@ -39,6 +39,24 @@ instrument segmentation. The datasets are not redistributed in this
 repository. Users should obtain them from their original sources and comply
 with the corresponding licenses and terms of use.
 
+PhaKIR is a restricted-access dataset. Users must register and sign in to
+Zenodo, submit the dataset provider's access request form, and wait for the
+request to be reviewed and approved. PhaKIR is distributed under the
+provider-specified **CC BY-NC-SA 4.0** terms, together with any additional
+access conditions stated by the provider. The dataset files are not
+redistributed in this repository, and all resulting works that use PhaKIR in
+whole or in part must cite the publications designated by the dataset
+provider.
+
+The EndoVis 2017 data used in our experiments were obtained through the
+[corresponding Kaggle dataset page](https://www.kaggle.com/datasets/ljhstaunch/endovis2017).
+Users should consult that page and the original EndoVis challenge or
+data-provider documentation before downloading the data. The Kaggle listing
+does not specify a separate dataset license, so users must not infer
+redistribution rights from the listing alone. Use and redistribution must
+comply with the applicable Kaggle terms, the original dataset terms, and any
+challenge citation requirements.
+
 ## Repository layout
 
 ```text
