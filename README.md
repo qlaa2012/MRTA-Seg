@@ -13,15 +13,16 @@ features from neighboring frames and injects a reliability gated residual into
 the current frame representation. This allows the main spatial feature path to
 remain stable while using temporal information when it is reliable.
 
-The main components are:
+The complete model described in the manuscript is MRTA-Seg, whose branch-aware
+deployment configuration is denoted as MRTA-C. The main components are:
 
 - **Motion Reliability Temporal Alignment (MRTA):** aligns neighboring-frame
   features and gates temporal residuals according to their reliability.
-- **MRTA-C:** improves the prototype mask branch through multi-scale feature
-  fusion and edge-aware prototype refinement.
-- **MRTA-C++:** adds an independent semantic auxiliary head during training to
-  strengthen category-aware representation learning. The semantic branch is
-  removed at inference, preserving the instance segmentation interface.
+- **MRTA-C:** applies MRTA to shared P3/P4 multiscale features and to the
+  mask-coefficient pathway at P3/P4/P5, while adding a lightweight prototype
+  edge residual. This branch-aware deployment preserves the current-frame main
+  path and the original prototype-coefficient instance-segmentation
+  formulation.
 
 ## Supported experiments
 
